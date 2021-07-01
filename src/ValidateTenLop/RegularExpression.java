@@ -12,7 +12,7 @@ public class RegularExpression {
     public RegularExpression() {
         pattern = Pattern.compile(CLASS);
     }
-    public boolean validate(String regex) {
+    private boolean validate(String regex) {
         matcher = pattern.matcher(regex);
         return matcher.matches();
     }
